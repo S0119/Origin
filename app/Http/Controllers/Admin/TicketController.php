@@ -11,4 +11,14 @@ class TicketController extends Controller
   {
       return view('admin.ticket.index');
   }
+  
+  public function create(Request $request)
+  {
+      return redirect('admin/ticket/index');
+  }  
+  
+  public function edit()
+  {
+      return view('admin.ticket.post');
+  }
 }

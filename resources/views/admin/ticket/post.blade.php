@@ -8,6 +8,6 @@
         <title>Ticket</title>
     </head>
     <body>
-        <h1>Ticket</h1>
+        <h1>Ticket 記事書くところ</h1>
     </body>
 </html>

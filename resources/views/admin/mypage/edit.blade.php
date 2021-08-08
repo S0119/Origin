@@ -5,9 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Ticket</title>
+        <title>Mypage</title>
     </head>
     <body>
-        <h1>Ticket</h1>
+        <h1>Mypage編集画面</h1>
     </body>
 </html>
