@@ -12,16 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('front');
 });
 
 Route::group(['prefix' => 'admin'], function() {
-    Route::get('ticket/index', 'Admin\TicketController@add');
-    Route::get('ticket/post', 'Admin\TicketController@edit');
+    Route::get('mypage/index', 'Admin\MypageController@add');
 });
 
 Route::group(['prefix' => 'admin'], function() {
-    Route::get('mypage/index', 'Admin\MypageController@add')->middleware('auth');
+     Route::get('ticket/index', 'Admin\TicketController@add')->middleware('auth');
+    Route::get('ticket/post', 'Admin\TicketController@edit')->middleware('auth');
     Route::get('mypage/edit', 'Admin\MypageController@edit')->middleware('auth');
 });
 Auth::routes();

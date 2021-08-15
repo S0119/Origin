@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('title', 'マイページ')
+@section('title', 'TICKET-MYPAGE')
 
 @section('content')
 <h1>mypage</h1>
