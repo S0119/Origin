@@ -18,7 +18,19 @@
     @include('parts/header')
 
     <main>
+      <img src="C:/Users/moyas/Downloads/movie-theater.png" class="ticket-banner">
+      <p>この画像の上にaboutを書く</p>
       <h1>トップページ</h1>
+      <div class="main">
+        <div class="container">
+          <div class="card-contents">
+            <h2 class="text-title">新着記事</h2>
+            <div class="post-list-area">
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="C:/Users/moyas/Downloads/movie-theater.png" class="ticket-banner">
     </main>
 
     @include('parts/footer')
