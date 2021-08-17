@@ -7,14 +7,20 @@ use App\Http\Controllers\Controller;
 
 class TicketController extends Controller
 {
-    public function add()
+    public function index()
   {
       return view('admin.ticket.index');
+  }
+  
+  public function add()
+  {
+      return view('admin.ticket.rank');
   }
   
   public function create(Request $request)
   {
       return redirect('admin/ticket/index');
+      return redirect('admin/ticket/rank');
   }  
   
   public function edit()

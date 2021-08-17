@@ -17,10 +17,11 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'admin'], function() {
     Route::get('mypage/index', 'Admin\MypageController@add');
+    Route::get('ticket/rank', 'Admin\TicketController@add');
 });
 
 Route::group(['prefix' => 'admin'], function() {
-     Route::get('ticket/index', 'Admin\TicketController@add')->middleware('auth');
+    Route::get('ticket/index', 'Admin\TicketController@index')->middleware('auth');
     Route::get('ticket/post', 'Admin\TicketController@edit')->middleware('auth');
     Route::get('mypage/edit', 'Admin\MypageController@edit')->middleware('auth');
 });

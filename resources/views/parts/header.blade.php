@@ -13,10 +13,11 @@
         </ul>
         </div>
         <div class="header-search-area">
-        <form>
+        <form action="#" onsubmit="alert('テストのため送信しません');return false;" >
             <input type="text">
             <input type="radio">映画
             <input type="radio">テーマパーク
+            <button type="submit">検索</button>
         </form>
         </div>
     </div>
