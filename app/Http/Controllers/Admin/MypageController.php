@@ -17,4 +17,10 @@ class MypageController extends Controller
   {
       return view('admin.mypage.edit');
   }
+
+public function create(Request $request)
+  {
+      // admin/news/createにリダイレクトする
+      return redirect('admin/mypage/edit');
+  }  
 }

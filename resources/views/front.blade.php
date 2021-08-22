@@ -18,20 +18,23 @@
     @include('parts/header')
 
     <main>
-      <img src="{{ secure_asset('image/movie-theater.png') }}">
-      <p>この画像の上にaboutを書く</p>
-      <h1>トップページ</h1>
-      <div class="main">
-        <div class="container">
-          <div class="card-contents">
-            <h2 class="text-title">新着記事</h2>
-            <div class="post-list-area">
-            </div>
-            </div>
-          </div>
+      <div class="container">
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" style="width: 50%;">
+          <button class="btn btn-default" type="submit">検索</button>
+          <input type="radio">映画
+          <input type="radio">テーマパーク
+          </span>
         </div>
-      </div>
-      <img src="C:/Users/moyas/Downloads/movie-theater.png" class="ticket-banner">
+      </form>
+      <div class="container-fluid">
+      <img class="card-img" img src="{{ secure_asset('image/movie-theater.png') }}" alt="">
+		</div>
+      <h1>トップページ</h1>
+            <h2 class="text-title">新着記事</h2>
+            </div>
+            </div>
     </main>
 
     @include('parts/footer')

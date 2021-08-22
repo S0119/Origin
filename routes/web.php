@@ -20,10 +20,11 @@ Route::group(['prefix' => 'admin'], function() {
     Route::get('ticket/rank', 'Admin\TicketController@add');
 });
 
-Route::group(['prefix' => 'admin'], function() {
-    Route::get('ticket/index', 'Admin\TicketController@index')->middleware('auth');
-    Route::get('ticket/post', 'Admin\TicketController@edit')->middleware('auth');
-    Route::get('mypage/edit', 'Admin\MypageController@edit')->middleware('auth');
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
+    Route::get('ticket/index', 'Admin\TicketController@index');
+    Route::get('ticket/post', 'Admin\TicketController@edit');
+    Route::get('mypage/edit', 'Admin\MypageController@edit');
+    Route::post('mypage/edit', 'Admin\MypageController@create');
 });
 Auth::routes();
 
