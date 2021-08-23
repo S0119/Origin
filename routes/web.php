@@ -25,6 +25,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
     Route::get('ticket/post', 'Admin\TicketController@edit');
     Route::get('mypage/edit', 'Admin\MypageController@edit');
     Route::post('mypage/edit', 'Admin\MypageController@create');
+    Route::post('ticket/post', 'Admin\TicketController@create');
 });
 Auth::routes();
 

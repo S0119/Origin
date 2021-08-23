@@ -26,6 +26,13 @@
               　</li>
             </div>
             </nav>
+        <div class="form-group row">
+                <input type="text" class="form-control" name="title">
+                <button class="btn btn-default" type="submit">検索</button>
+                <input type="radio">映画
+                <input type="radio">テーマパーク
+            </div>
+        </div>
         </div>
         </div>
         </div>

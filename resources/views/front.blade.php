@@ -19,15 +19,6 @@
 
     <main>
       <div class="container">
-      <form>
-        <div class="form-group">
-          <input type="text" class="form-control" style="width: 50%;">
-          <button class="btn btn-default" type="submit">検索</button>
-          <input type="radio">映画
-          <input type="radio">テーマパーク
-          </span>
-        </div>
-      </form>
       <div class="container-fluid">
       <img class="card-img" img src="{{ secure_asset('image/movie-theater.png') }}" alt="">
 		</div>

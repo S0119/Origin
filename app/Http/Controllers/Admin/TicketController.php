@@ -19,7 +19,7 @@ class TicketController extends Controller
   
   public function create(Request $request)
   {
-      return redirect('admin/ticket/index');
+      return redirect('admin/ticket/post');
   }  
   
   public function edit()
