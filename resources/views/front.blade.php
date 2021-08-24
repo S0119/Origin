@@ -18,14 +18,19 @@
     @include('parts/header')
 
     <main>
-      <div class="container">
-      <div class="container-fluid">
-      <img class="card-img" img src="{{ secure_asset('image/movie-theater.png') }}" alt="">
+        <div class="container py-4">
+          <div class="position-relative">
+          <img src="{{ secure_asset('image/movie-theater.png') }}" alt="" class="img-fluid">
+            <p class="h1">TICKETとは</p>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
 		</div>
       <h1>トップページ</h1>
             <h2 class="text-title">新着記事</h2>
-            </div>
-            </div>
+        </div>
+      </div>
     </main>
 
     @include('parts/footer')
